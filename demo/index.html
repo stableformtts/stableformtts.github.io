@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.88.1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href=""https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+	<link rel="stylesheet" href="../css/custom.css">
+	<link rel="stylesheet" href="../css/normalize.css">
+
+	<title>VALL-E</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
+
+<div class="container" >
+<header role="banner">
+</header>
+<main role="main">
+<article itemscope itemtype="https://schema.org/BlogPosting">
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<div class="text-center">
+	<h1>StableForm-TTS</h1>
+        <h3>Overcoming Catastrophic Mispronunciation in Diffusion-Based Zero-Shot Speech Synthesis via Stable Formant Generation</h3>
+			INTERSPEECH 2024 Under Review.
+	</div>
+	<br>
+	<p>
+        <b>Abstract.</b> 
+		Diffusion models have achieved remarkable success in text-to-speech (TTS), even in zero-shot scenarios. 
+		Recent efforts aim to address the trade-off between inference speed and sound quality, often considered the primary drawback of diffusion models. 
+		However, we have found a critical mispronunciation issue is being overlooked. Our preliminary study reveals the unstable pronunciation resulting from the diffusion process. 
+		Based on this observation, we introduce StableForm-TTS, a novel zero-shot speech synthesis framework designed to produce robust pronunciation while maintaining the advantages of diffusion modeling. 
+		By pioneering the adoption of source-filter theory in diffusion TTS, we propose an elaborate architecture for stable formant generation and dynamic pitch generation. 
+		Experimental results on unseen speakers show that our model outperforms the state-of-the-art method in terms of pronunciation accuracy and naturalness, with comparable speaker similarity.
+    </p>
+
+</div>
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">		
+	<h2 id="model-overview" style="text-align: center;">Model Overview</h2>
+	<body>
+	<p style="text-align: center;">
+		<img src="./Overview.jpg" height="400" width="800">
+	</p>
+	</body>
+		<p>
+			The overview of StableForm-TTS. 
+			For brevity, the phoneme, pitch, and energy embedding layers are omitted.
+		</p>
+</div>
+ 
+</article>
+</main>
+</div>
+
+</body>
+</html>
