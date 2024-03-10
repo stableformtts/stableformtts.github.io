@@ -45,9 +45,9 @@
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">		
 	<h2 id="model-overview" style="text-align: center;">Model Overview</h2>
 	<body>
-	<p style="text-align: center;">
-		<img src="static/images/Overview.jpg" height="400" width="800">
-	</p>
+		<p style="text-align: center;">
+			<img src="static/images/Overview.jpg" height="400" width="800">
+		</p>
 	</body>
 		<p>
 			The overview of StableForm-TTS. 
@@ -55,6 +55,46 @@
 		</p>
 </div>
  
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<h2 id="ljspeech-samples" style="text-align: center;">Zero-Shot Speech Synthesis (VCTK dataset)</h2>
+	<div class="table-responsive pt-3">
+		<table class="table table-hover pt-2">
+			<thead>
+				<tr>
+					<th style="text-align: center">Text</th>
+					<th style="text-align: center">Reference</th>
+					<th style="text-align: center">Ground Truth</th>
+					<th style="text-align: center">Ground Truth (voc.)</th>
+					<th style="text-align: center">Grad-StyleSpeech</th>
+					<th style="text-align: center">StableForm-TTS</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan=4 style="text-align: left;vertical-align:middle;width: 600px">Of course we make mistakes, but we don't make too many.</td>
+					<td rowspan=4 style="text-align: center;vertical-align:middle"><audio controls="controls" style="width: 140px;"><source src="static/audios/Reference/11_ref_audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					<td rowspan=4 style="text-align: center;vertical-align:middle"><audio controls="controls" style="width: 140px;"><source src="static/audios/GT/11_gt_audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					<td rowspan=4 style="text-align: center;vertical-align:middle"><audio controls="controls" style="width: 140px;"><source src="static/audios/GT_voc/11_gt_voc_audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					<td style="text-align: center">PF 10<audio controls="controls" style="width: 140px;"><source src="static/audios/Grad-StyleSpeech/11_gss_audio_pf_10.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					<td style="text-align: center">PF 10<audio controls="controls" style="width: 140px;"><source src="static/audios/StableForm-TTS/11_sftts_audio_pf_10.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">PF 100<audio controls="controls" style="width: 140px;"><source src="static/audios/Grad-StyleSpeech/11_gss_audio_pf_100.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					<td style="text-align: center">PF 100<audio controls="controls" style="width: 140px;"><source src="static/audios/StableForm-TTS/11_sftts_audio_pf_100.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">ML 10<audio controls="controls" style="width: 140px;"><source src="static/audios/Grad-StyleSpeech/11_gss_audio_ml_10.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					<td style="text-align: center">ML 10<audio controls="controls" style="width: 140px;"><source src="static/audios/StableForm-TTS/11_sftts_audio_ml_10.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				</tr>
+				<tr>
+					<td style="text-align: center">ML 100<audio controls="controls" style="width: 140px;"><source src="static/audios/Grad-StyleSpeech/11_gss_audio_ml_100.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+					<td style="text-align: center">ML 100<audio controls="controls" style="width: 140px;"><source src="static/audios/StableForm-TTS/11_sftts_audio_ml_100.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
 </article>
 </main>
 </div>
